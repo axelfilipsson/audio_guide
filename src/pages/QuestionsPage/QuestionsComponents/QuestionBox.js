@@ -45,7 +45,7 @@ const QuestionBox = () => {
 
     return (
         <Container>
-                <h1>Hur var din upplevelse?</h1>
+                {/* <h1>Hur var din upplevelse?</h1>
                 {submitting &&
                     <div>
                         Du har valt följande:
@@ -55,8 +55,17 @@ const QuestionBox = () => {
                             ))}
                         </ul>
                     </div>
-                }
-                <form onSubmit={handleSubmit}>
+                } */}
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfeAnb2VjiDhlMq0KR3_YS0JU9RNES1quDP-wcD_d3vBOl4sQ/viewform?embedded=true" width="360" height="510" frameborder="0" marginheight="0" marginwidth="0">Läser in …</iframe>
+{/* <form>
+  <input class="input" type="text" placeholder="Name" />
+  <input class="input" type="email" placeholder="Email" />
+  <button class="button" type="submit" >
+    Submit
+  </button>
+</form> */}
+                {/* <form onSubmit={handleSubmit}>
                     <fieldset>
                         <label>
                             <p>Namn</p>
@@ -76,7 +85,7 @@ const QuestionBox = () => {
                         </label>
                     </fieldset>
                     <SubmitButton type="submit">skicka</SubmitButton>
-                </form>
+                </form> */}
         </Container>
     )
 }

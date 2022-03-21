@@ -1,4 +1,4 @@
-import song from "../../../resources/khruangbin.mp3";
+import song from "../../../resources/knack.mp3";
 import styled from 'styled-components'
 
 const Button = styled.button`
