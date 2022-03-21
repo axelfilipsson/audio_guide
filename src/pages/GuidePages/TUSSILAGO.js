@@ -10,7 +10,7 @@ const GuidePage = () => {
     <div>
       <GuideHeader title={artwork.title} artist={artwork.artist}/>
       <AudioPlayer/>
-      <InfoBox/>
+      <InfoBox firstWord={"Lorem "} rest={"ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt ligula non nisl tempor pretium nec non tortor. Aliquam lobortis enim in orci euismod, non pellentesque nisl congue. Duis scelerisque iaculis mauris fermentum accumsan."}/>
       <FooterPoll></FooterPoll>
     </div>
   )

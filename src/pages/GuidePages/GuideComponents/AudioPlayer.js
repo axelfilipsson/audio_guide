@@ -1,16 +1,30 @@
 import song from "../../../resources/knack.mp3";
 import styled from 'styled-components'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import PauseIcon from '@mui/icons-material/Pause';
 
-const Button = styled.button`
+const PauseButton = styled.button`
   background: #3959F8;
   border: none;
   color: #EFEFEF;
   margin-top: 40px;
   margin-bottom: 18px;
-  width: 12em;
+  width: 6em;
   height: 12em;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-  border-radius: 100px;
+  border-radius: 100px 0px 0px 100px ;
+`
+
+const PlayButton = styled.button`
+  background: #3959F8;
+  border: none;
+  color: #EFEFEF;
+  margin-top: 40px;
+  margin-bottom: 18px;
+  width: 6em;
+  height: 12em;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  border-radius: 0px 100px 100px 0px ;
 `
 
 const Text = styled.text`
@@ -27,7 +41,10 @@ const AudioPlayer = () => {
     if (audio.paused) {
       audio.play();
     }
-    else {
+  }
+
+  function pause() {
+    if (!audio.paused) {
       audio.pause();
     }
   }
@@ -35,9 +52,12 @@ const AudioPlayer = () => {
 
   return (
     <div>
-      <Button onClick={play}>
-      <Text>LYSSNA</Text> 
-      </Button>
+       <PauseButton onClick={play}>
+        <PlayArrowIcon fontSize="large" />
+      </PauseButton>
+      <PlayButton onClick={pause}>
+        <PauseIcon fontSize="large" />
+      </PlayButton>
     </div>
   )
 }

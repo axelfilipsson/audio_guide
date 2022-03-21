@@ -77,6 +77,8 @@ text-decoration: none;
 
 const FooterPoll = () => {
 
+  // https://docs.google.com/forms/u/0/d/e/1FAIpQLScD7DyF5mN0Gm01jLD_7Pvo5tBgxh0KRyNp8uG8pMIA1vFgrw/formResponse
+
   const [isOpen, setIsOpen] = useState(false);
 
   const popup = () => {
