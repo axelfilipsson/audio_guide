@@ -92,9 +92,6 @@ const styledFrame = styled.iframe`
 
 const FooterPoll = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const popup = () => {
-    setIsOpen(true);
-  }
   
   axios.post('/user', {
     firstName: 'Fred',
@@ -113,15 +110,14 @@ const FooterPoll = () => {
         <Footer>
           <Container>
             <No >
-              <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScD7DyF5mN0Gm01jLD_7Pvo5tBgxh0KRyNp8uG8pMIA1vFgrw/formResponse" target="_blank" onSubmit={() => setIsOpen(true)}>
+              <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScD7DyF5mN0Gm01jLD_7Pvo5tBgxh0KRyNp8uG8pMIA1vFgrw/formResponse" target="_blank" method="post" >
                 <input name="entry.1988801367" type="hidden" value="Nej" />
-                <StyledInput type="submit" value="Nej" />
-
+                <StyledInput  type="submit" value="Nej"  />
               </form>
             </No>
             <Question> <p>GER HEMSIDAN DIG NÅGOT MERVÄRDE?</p></Question>
             <Yes>
-              <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScD7DyF5mN0Gm01jLD_7Pvo5tBgxh0KRyNp8uG8pMIA1vFgrw/formResponse" onSubmit={() => setIsOpen(true)} target="_blank">
+              <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScD7DyF5mN0Gm01jLD_7Pvo5tBgxh0KRyNp8uG8pMIA1vFgrw/formResponse"  target="_blank">
                 <input name="entry.1988801367" type="hidden" value="Ja" />
                 <StyledInput type="submit" value="Ja" />
               </form>

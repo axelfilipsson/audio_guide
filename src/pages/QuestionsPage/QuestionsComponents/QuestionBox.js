@@ -22,10 +22,6 @@ const QuestionBox = () => {
                 <input name="entry.555448699" type="text" />
                 <br></br>
                 <br></br>
-                <label>Email</label>
-                <input name="entry.444743398" type="email" required />
-                <br></br>
-                <br></br>
                 <input type="submit" value="Send" />
 
             </form>
