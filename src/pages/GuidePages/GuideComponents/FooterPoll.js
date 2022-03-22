@@ -11,16 +11,10 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
   font-weight: bold;
+  font-size: 18px;
 `
 
-const Invisible = styled.div`
-  height: 20px;
-  position: relative;
-  background-color: #EDEDED;
-  position: fixed; 
-  bottom:10%;
-  width: 100%;
-`
+
 const Footer = styled.div`
   height: 60px;
   position: relative;
@@ -82,22 +76,11 @@ text-decoration: none;
   font-size: 18px;
 
 `
-
-
-const styledFrame = styled.iframe`
-
-
-
-`
-
 const FooterPoll = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   return (
     <div>
-
-   
-{/* <Invisible /> */}
       {!isOpen ?
         <Footer>
           <Container>
