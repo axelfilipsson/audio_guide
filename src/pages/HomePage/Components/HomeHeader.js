@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from "react-router-dom";
+import Logo from '../../../resources/logo.svg'
 
 const Header = styled.div`
 display: table;
@@ -12,9 +13,14 @@ width: 100%;
 `
 
 const H1 = styled.div`
-  margin-left: 2%;
+  margin-left: 4%;
   float: left;
+  font-size: 26px;
 
+`
+const Img = styled.img`
+height: 34px;
+float: left;
 `
 
 const About = styled.div`
@@ -31,11 +37,14 @@ vertical-align: middle;
 `
 
 
+
+
 const HomeHeader = () => {
   return (
     <Header>
       <Line>
-        <H1> DRAMATEN</H1>
+      <Img src={Logo} /> 
+        <H1> Ljudguide</H1>
         <Link to="/about" >
           <About>ABOUT</About>
         </Link>

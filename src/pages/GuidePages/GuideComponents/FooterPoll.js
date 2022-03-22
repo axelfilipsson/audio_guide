@@ -93,19 +93,11 @@ const styledFrame = styled.iframe`
 const FooterPoll = () => {
   const [isOpen, setIsOpen] = useState(false);
   
-  axios.post('/user', {
-    firstName: 'Fred',
-    lastName: 'Flintstone'
-  });
-
-  
-
-
   return (
     <div>
 
    
-<Invisible />
+{/* <Invisible /> */}
       {!isOpen ?
         <Footer>
           <Container>
