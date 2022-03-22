@@ -12,7 +12,6 @@ padding: 10px;
 const QuestionBox = () => {
 
 
-
     return (
         <Container>
             <h1>Hur var din upplevelse?</h1>

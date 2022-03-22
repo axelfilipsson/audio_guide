@@ -1,8 +1,17 @@
-import React from 'react'
-import styled from 'styled-components'
-import { useState } from 'react'
 import { Link } from "react-router-dom";
+import styled from 'styled-components'
+import React, { useReducer, useState } from "react";
+import axios from "axios"
 
+const StyledInput = styled.input`
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+`
 
 const Invisible = styled.div`
   height: 20px;
@@ -75,25 +84,48 @@ text-decoration: none;
 `
 
 
+const styledFrame = styled.iframe`
+
+
+
+`
+
 const FooterPoll = () => {
-
-  // https://docs.google.com/forms/u/0/d/e/1FAIpQLScD7DyF5mN0Gm01jLD_7Pvo5tBgxh0KRyNp8uG8pMIA1vFgrw/formResponse
-
   const [isOpen, setIsOpen] = useState(false);
-
   const popup = () => {
     setIsOpen(true);
   }
+  
+  axios.post('/user', {
+    firstName: 'Fred',
+    lastName: 'Flintstone'
+  });
+
+  
+
 
   return (
     <div>
-      <Invisible/>
+
+   
+<Invisible />
       {!isOpen ?
         <Footer>
           <Container>
-            <No onClick={popup}>Nej</No>
+            <No >
+              <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScD7DyF5mN0Gm01jLD_7Pvo5tBgxh0KRyNp8uG8pMIA1vFgrw/formResponse" target="_blank" onSubmit={() => setIsOpen(true)}>
+                <input name="entry.1988801367" type="hidden" value="Nej" />
+                <StyledInput type="submit" value="Nej" />
+
+              </form>
+            </No>
             <Question> <p>GER HEMSIDAN DIG NÅGOT MERVÄRDE?</p></Question>
-            <Yes onClick={(popup)}>Ja</Yes>
+            <Yes>
+              <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScD7DyF5mN0Gm01jLD_7Pvo5tBgxh0KRyNp8uG8pMIA1vFgrw/formResponse" onSubmit={() => setIsOpen(true)} target="_blank">
+                <input name="entry.1988801367" type="hidden" value="Ja" />
+                <StyledInput type="submit" value="Ja" />
+              </form>
+            </Yes>
           </Container>
         </Footer> :
 
@@ -105,7 +137,7 @@ const FooterPoll = () => {
             </Okey>
           </Container>
         </Popup>
-      }
+      } 
     </div>
   )
 }

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import PauseIcon from '@mui/icons-material/Pause';
 
-const PauseButton = styled.button`
+const PlayButton = styled.button`
   background: #3959F8;
   border: none;
   color: #EFEFEF;
@@ -13,9 +13,10 @@ const PauseButton = styled.button`
   height: 12em;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
   border-radius: 100px 0px 0px 100px ;
+
 `
 
-const PlayButton = styled.button`
+const PauseButton = styled.button`
   background: #3959F8;
   border: none;
   color: #EFEFEF;
@@ -52,12 +53,13 @@ const AudioPlayer = () => {
 
   return (
     <div>
-       <PauseButton onClick={play}>
-        <PlayArrowIcon fontSize="large" />
-      </PauseButton>
       <PlayButton onClick={pause}>
         <PauseIcon fontSize="large" />
       </PlayButton>
+      <PauseButton onClick={play}>
+        <PlayArrowIcon fontSize="large" />
+      </PauseButton>
+
     </div>
   )
 }
