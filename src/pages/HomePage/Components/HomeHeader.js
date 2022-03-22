@@ -15,7 +15,7 @@ width: 100%;
 const H1 = styled.div`
   margin-left: 4%;
   float: left;
-  font-size: 26px;
+  font-size: 24px;
 
 `
 const Img = styled.img`
@@ -44,7 +44,7 @@ const HomeHeader = () => {
     <Header>
       <Line>
       <Img src={Logo} /> 
-        <H1> Ljudguide</H1>
+        <H1> LJUDGUIDE</H1>
         <Link to="/about" >
           <About>ABOUT</About>
         </Link>
