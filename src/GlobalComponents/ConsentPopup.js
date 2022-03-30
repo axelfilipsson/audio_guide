@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   color: white;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.86);
   border-radius: 10px;
-  opacity: 0.9;
+
   width: 90%;
   height: 90%;
   position: absolute;
@@ -41,7 +41,6 @@ const ConsentPopup = (props) => {
     return (
         <div>
             <Container>
-
                 <Info>
                     Välkommen!
                     <br /><br />
@@ -52,7 +51,7 @@ const ConsentPopup = (props) => {
                     Är du under 18 så får du dock inte svara på frågorna.
                     <br /><br />
 
-                    Protypen använder även cookies men bara för att göra din upplevlse på sidan bättre.
+                    Protypen använder även cookies men bara för att göra din upplevelse på sidan bättre.
                 </Info>
                 <Button onClick={() => handleClick(true)}>Jag är under 18 år och samtycker</Button>
                 <Button onClick={() => handleClick(false)}>Jag samtycker</Button>

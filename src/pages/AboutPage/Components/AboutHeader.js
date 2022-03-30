@@ -3,30 +3,34 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import IconButton from '@mui/material/IconButton';
 import { Link } from "react-router-dom";
 
-const Header = styled.div`
-  width: 100%;
-  display: table;
-  padding: 30px;
-  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-  text-align: left;
-`
 
-const Back = styled.div`
-margin-left: 2%;
-float: left;
+const Header = styled.div`
+display: table;
+padding: 30px;
+box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+text-align: left;
+width: 100%;
 `
+const Back = styled.div`
+
+float: left;
+font-size: 20px;
+color: black;
+` 
 
 const H1 = styled.div`
-margin-top: 2px;
-margin-right: 14%;
+margin-top: 7px;
+float: left;
+font-size: 20px;
 color: black;
-
+margin-left: 8px;
 `
 
-
-
-
 const AboutHeader = () => {
+
+
+
+
   return (
     <Header>
       <Back>
@@ -36,7 +40,8 @@ const AboutHeader = () => {
           </IconButton>
         </Link>
       </Back>
-      <H1>Om projektet</H1>
+      <H1>OM PROJEKTET</H1>
+    
     </Header>
   )
 }

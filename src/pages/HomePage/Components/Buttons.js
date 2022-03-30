@@ -17,9 +17,7 @@ const Buttons = () => {
 
   return (
     <ButtonContainer>
-        <StyledLink to={"/TUSSILAGO"} > <GuideButton text={"TUSSILAGO"}></GuideButton></StyledLink>
-        <StyledLink to={"/SKEN"} > <GuideButton text={"SKEN"}></GuideButton></StyledLink>
- 
+        <StyledLink to={"/TUSSILAGO"} > <GuideButton text={"TUSSILAGO"}></GuideButton></StyledLink> 
     </ButtonContainer>
   )
 }

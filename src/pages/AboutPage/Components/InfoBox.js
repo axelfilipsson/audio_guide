@@ -19,7 +19,7 @@ const InfoBox = () => {
     return (
         <Container>
             <Text>
-                <b>Vi </b>är Axel och Vanessa och har i samarbete med Dramaten skapat Ljudguiden som en del av vårt examensarbete på Stockholms universitet.
+                <b>Vi är Axel och Vanessa och har i samarbete med Dramaten skapat Ljudguiden som en del av vårt examensarbete på Stockholms universitet.
                 <br></br><br></br>
 
                 Hoppas du tycker det är kul att få testa detta med oss!
@@ -27,10 +27,12 @@ const InfoBox = () => {
 
                 Det är viktigt för oss att få in så många svar som möjligt, hjälp oss gärna genom att svara på enkäten nedan!
 
-                Självklart får du vara anonym.
+                Självklart är du anonym.
                 <br></br><br></br>
                 Tack och ha en fin dag!
                 <br></br><br></br>
+
+                </b>
             </Text>
         </Container>
     )

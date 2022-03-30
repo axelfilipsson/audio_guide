@@ -9,7 +9,7 @@ import ConsentPopup from './GlobalComponents/ConsentPopup'
 import React, { useState, useEffect } from 'react';
 
 import TUSSILAGO from './pages/GuidePages/TUSSILAGO'
-import SKEN from './pages/GuidePages/SKEN'
+
 
 const MainContext = createContext(null);
 
@@ -41,7 +41,7 @@ function App() {
           <Route path="/about" element={<AboutPage underAged={underAged} />} />
           <Route path="/questions" element={<QuestionsPage />} />
           <Route path="/TUSSILAGO" element={<TUSSILAGO underAged={underAged} popup={popup} />} />
-          <Route path="/SKEN" element={<SKEN underAged={underAged} popup={popup} />} />
+        
         </Routes>
       </Router>
     </div>
