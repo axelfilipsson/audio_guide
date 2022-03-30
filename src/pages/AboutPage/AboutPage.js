@@ -7,7 +7,7 @@ import styled from 'styled-components'
 
 const StyledLink = styled(Link)`
      text-decoration: none;
-     background-color: black;
+     background-color: #3959F8;
      color: white;
      padding: 10px;
      font-size: 20px;
@@ -16,12 +16,14 @@ const StyledLink = styled(Link)`
 `;
 
 
-const AboutPage = () => {
+const AboutPage = (props) => {
     return (
         <div>
             <AboutHeader />
-            <InfoBox />
-            <StyledLink to={"/questions"} > Svara på frågorna</StyledLink>
+            <InfoBox underAged={ props.underAged }/>
+{!props.underAged ? 
+            <StyledLink to={"/questions"} >SVARA PÅ FRÅGORNA</StyledLink>
+            : null}
 
         </div>
     )
