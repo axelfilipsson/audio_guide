@@ -6,9 +6,9 @@ const Container = styled.div`
   background-color: rgba(0, 0, 0, 0.86);
   border-radius: 10px;
   width: 90%;
-  height: 90%;
+//   height: 80%;
   position: absolute;
-  top: 6%;
+  top: 2%;
   left: 6%;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
 
@@ -34,7 +34,11 @@ font-weight: bold;
 font-size: 20px;
 padding: 10px;
 border-radius: 10px;
-margin-top: 20px;
+margin-top: 8px;
+margin-bottom: 26px;
+`
+const Break =  styled.div`
+height: 6px;
 `
 
 
@@ -46,9 +50,7 @@ const QuestionConsent = (props) => {
     return (
         <div>
             <Container>
-                <Header>
-                Välkommen hit!
-                </Header>
+            
                 <Info>
                     Studien görs som ett kandidatarbete på institutionen för Data & systemvetenskap hos Stockholms Universitet tillsammans med Dramaten. I studien kollar vi på hur digital teknik kan förbättra din upplevelse här på Dramaten.
                     <ul>
@@ -58,14 +60,13 @@ const QuestionConsent = (props) => {
                     </ul>
 
                  <b>Kontakt</b> <br></br>
-                 filipsson960409@gmail.com <br></br>
-                jacobssonvanessa@gmail.com
-
-                 <br></br>
-                 <br></br>
-                 <b>Ansvariga</b> <br></br>
                  Axel Filipsson <br></br>
-                 Vanessa Jacobsson
+                 axfi4485@student.su.se
+                 <Break/>
+                 Vanessa Jacobsson<br></br>
+                 vaja3619@student.su.se
+
+              
                 </Info>
                 <Button onClick={() => handleClick(false)}>Jag samtycker</Button>
 

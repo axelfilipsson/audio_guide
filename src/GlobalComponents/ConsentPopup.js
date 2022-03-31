@@ -5,16 +5,16 @@ const Container = styled.div`
   color: white;
   background-color: rgba(0, 0, 0, 0.86);
   border-radius: 10px;
-
   width: 90%;
-  height: 90%;
+  height: 80%;
   position: absolute;
-  top: 6%;
+  top: 2%;
   left: 6%;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
 
 `
 const Info = styled.div`
+
 margin: 16px;
 font-size: 16px;
 `
