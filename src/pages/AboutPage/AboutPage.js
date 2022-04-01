@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import styled from 'styled-components'
 
 
+const Body = styled.div`
+height:100vh;
+`
+
 
 const StyledLink = styled(Link)`
      text-decoration: none;
@@ -18,14 +22,14 @@ const StyledLink = styled(Link)`
 
 const AboutPage = (props) => {
     return (
-        <div>
+        <Body>
             <AboutHeader />
-            <InfoBox underAged={ props.underAged }/>
-{!props.underAged ? 
-            <StyledLink to={"/questions"} >SVARA PÅ FRÅGORNA</StyledLink>
-            : null}
+            <InfoBox underAged={props.underAged} />
+            {!props.underAged ?
+                <StyledLink to={"/questions"} >SVARA PÅ FRÅGORNA</StyledLink>
+                : null}
 
-        </div>
+        </Body>
     )
 }
 
