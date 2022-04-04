@@ -8,7 +8,7 @@ const Body = styled.div`
 height:100vh;
 `
 
-const artwork = { title: "TUSSILAGO", artist: "GABRIELLA NUBRÈ" };
+const artwork = { title: "FRU OLIN"};
 
 const GuidePage = (props) => {
   return (

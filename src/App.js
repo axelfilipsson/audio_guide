@@ -8,7 +8,11 @@ import { createContext } from "react";
 import ConsentPopup from './GlobalComponents/ConsentPopup'
 import React, { useState, useEffect } from 'react';
 
-import TUSSILAGO from './pages/GuidePages/TUSSILAGO'
+import OMDRAMATEN from './pages/GuidePages/OMDRAMAT'
+import KOMEDINOCHTRAGEDIN from './pages/GuidePages/KOMEDINOCHTRAGEDIN'
+import DRAMATSSKAPELSE from './pages/GuidePages/DRAMATSSKAPELSE'
+import GUSTAVIIIKOMPLIMENTERANDEFRUOLIN from './pages/GuidePages/GUSTAVIIIKOMPLIMENTERANDEFRUOLIN'
+
 
 
 const MainContext = createContext(null);
@@ -40,7 +44,10 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage underAged={underAged} />} />
           <Route path="/questions" element={<QuestionsPage />} />
-          <Route path="/TUSSILAGO" element={<TUSSILAGO underAged={underAged} popup={popup} />} />
+          <Route path="/DRAMATSSKAPELSE" element={<DRAMATSSKAPELSE underAged={underAged} popup={popup} />} />
+          <Route path="/OMKONSTEN" element={<OMDRAMATEN underAged={underAged} popup={popup} />} />
+          <Route path="/KOMEDINOCHTRAGEDIN" element={<KOMEDINOCHTRAGEDIN underAged={underAged} popup={popup} />} />
+          <Route path="/GUSTAVIIIKOMPLIMENTERANDEFRUOLIN" element={<GUSTAVIIIKOMPLIMENTERANDEFRUOLIN underAged={underAged} popup={popup} />} />
         
         </Routes>
       </Router>

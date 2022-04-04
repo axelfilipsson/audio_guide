@@ -19,11 +19,11 @@ color: black;
 ` 
 
 const H1 = styled.div`
-margin-top: 7px;
+margin-top: 8px;
 float: left;
-font-size: 20px;
+font-size: 18px;
 color: black;
-margin-left: 8px;
+margin-left: 4px;
 `
 const About = styled.div`
   margin-top: 10px;

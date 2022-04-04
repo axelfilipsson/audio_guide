@@ -11,8 +11,6 @@ height:100%;
 `
 
 
-
-
 const QuestionsPage = () => {
 
   const [consent, giveConsent] = useState(false);

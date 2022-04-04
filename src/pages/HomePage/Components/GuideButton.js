@@ -6,12 +6,12 @@ const Button = styled.button`
   color: #EFEFEF;
   margin-bottom: 2em;
   width: 24em;
-  height: 4em;
+  height: 6em;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 `
 
 const Text = styled.text`
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
 `
 
