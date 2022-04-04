@@ -17,38 +17,32 @@ import GUSTAVIIIKOMPLIMENTERANDEFRUOLIN from './pages/GuidePages/GUSTAVIIIKOMPLI
 
 const MainContext = createContext(null);
 
-
-
-
 function App() {
   const [popup, setPopup] = useState(true);
-  const [underAged, setUnderAged] = useState(true);
+  const [questionConsent, giveQuestionConsent] = useState(false)
 
   useEffect(() => {
     console.log(localStorage.getItem('consent'))
     if (localStorage.getItem('consent') != null) {
       setPopup(JSON.parse(localStorage.getItem('consent')))
-      setUnderAged(JSON.parse(localStorage.getItem('underAged')))
+      giveQuestionConsent(JSON.parse(localStorage.getItem('questionConsent')))
     }
-
-
   }, []);
 
   return (
 
     <div className="App">
-      {popup ? <ConsentPopup setUnderAged={setUnderAged} setPopup={setPopup} /> : null}
+      {popup ? <ConsentPopup setPopup={setPopup} /> : null}
 
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage underAged={underAged} />} />
-          <Route path="/questions" element={<QuestionsPage />} />
-          <Route path="/DRAMATSSKAPELSE" element={<DRAMATSSKAPELSE underAged={underAged} popup={popup} />} />
-          <Route path="/OMKONSTEN" element={<OMDRAMATEN underAged={underAged} popup={popup} />} />
-          <Route path="/KOMEDINOCHTRAGEDIN" element={<KOMEDINOCHTRAGEDIN underAged={underAged} popup={popup} />} />
-          <Route path="/GUSTAVIIIKOMPLIMENTERANDEFRUOLIN" element={<GUSTAVIIIKOMPLIMENTERANDEFRUOLIN underAged={underAged} popup={popup} />} />
-        
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/questions" element={<QuestionsPage popup={popup} questionConsent={questionConsent}giveQuestionConsent={giveQuestionConsent}/>} />
+          <Route path="/DRAMATSSKAPELSE" element={<DRAMATSSKAPELSE questionConsent={questionConsent} popup={popup} />} />
+          <Route path="/OMKONSTEN" element={<OMDRAMATEN questionConsent={questionConsent}  popup={popup} />} />
+          <Route path="/KOMEDINOCHTRAGEDIN" element={<KOMEDINOCHTRAGEDIN questionConsent={questionConsent} popup={popup} />} />
+          <Route path="/GUSTAVIIIKOMPLIMENTERANDEFRUOLIN" element={<GUSTAVIIIKOMPLIMENTERANDEFRUOLIN questionConsent={questionConsent}  popup={popup} />} />
         </Routes>
       </Router>
     </div>

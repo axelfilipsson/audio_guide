@@ -6,7 +6,7 @@ const Container = styled.div`
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   width: 90%;
-  height: 60%;
+  height: 70%;
   position: absolute;
   top: 2%;
   left: 6%;
@@ -33,10 +33,9 @@ margin-top: 20px;
 const ConsentPopup = (props) => {
 
     function handleClick(underAged) {
-        props.setUnderAged(underAged)
+
         props.setPopup(false)
         localStorage.setItem("consent", false);
-        localStorage.setItem("underAged", underAged);
     }
     return (
         <div>

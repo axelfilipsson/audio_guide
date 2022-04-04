@@ -23,13 +23,13 @@ margin-top: 8px;
 float: left;
 font-size: 18px;
 color: black;
-margin-left: 4px;
+margin-left: 0px;
 `
 const About = styled.div`
-  margin-top: 10px;
+  margin-top: 11px;
   margin-right: 14%;
   float: right;
-  font-size: 14px;
+  font-size: 12px;
   color: black;
 `
 

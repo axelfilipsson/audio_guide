@@ -8,7 +8,7 @@ const Body = styled.div`
 height:100vh;
 `
 
-const artwork = { title: "DRAMATS SKAPELSE"};
+const artwork = { title: "DRAMATS SKAPELSE" };
 
 const GuidePage = (props) => {
   return (
@@ -17,7 +17,7 @@ const GuidePage = (props) => {
       <AudioPlayer />
       <InfoBox firstWord={"Målningen"} rest={" i Dramatens foajé har den symboliska titeln Dramats skapelse. Konstnären är Carl Larsson. Den visar en svävande ung dam, utsänd av Författaren i ena änden och en krigiskt utstyrd Skådespelare som är redo att med öppna armar ta emot i den andra änden."} />
       {!props.popup &&
-        !props.underAged ?
+        !props.questionConsent ?
         <FooterPoll ></FooterPoll> : null}
     </Body>
   )

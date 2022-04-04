@@ -11,15 +11,14 @@ height:100%;
 `
 
 
-const QuestionsPage = () => {
+const QuestionsPage = (props) => {
 
-  const [consent, giveConsent] = useState(false);
+
 
   return (
     <Body>
-       {!consent ? null :<QuestionHeader/>}
-
-      {!consent ? <QuestionConsent giveConsent={giveConsent} /> : <QuestionBox />}
+       {!props.questionConsent ? null :<QuestionHeader/>}
+ {!props.questionConsent ? <QuestionConsent giveQuestionConsent={props.giveQuestionConsent} /> : <QuestionBox />}
     </Body>
 
   )

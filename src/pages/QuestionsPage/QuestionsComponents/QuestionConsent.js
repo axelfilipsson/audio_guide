@@ -11,10 +11,6 @@ margin-bottom: 100px;
 padding: 10px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
 `
-const Header = styled.div`
-margin: 16px;
-font-size: 16px;
-`
 
 const Info = styled.div`
 text-align: left;
@@ -39,11 +35,16 @@ const Break = styled.div`
 height: 6px;
 `
 
+const Contact = styled.p`
+font-size: 12px;
+text-align: center;
+`
 
 const QuestionConsent = (props) => {
 
     function handleClick() {
-        props.giveConsent(true)
+        props.giveQuestionConsent(true)
+        localStorage.setItem("questionConsent", true);
     }
     return (
         <div>
@@ -58,13 +59,12 @@ const QuestionConsent = (props) => {
                         <li>Du måste vara 18 år eller äldre för att svara på enkäten.</li>
                     </ul>
 
-                    <b>Kontakt</b> <br></br>
-                    Axel Filipsson <br></br>
-                    axfi4485@student.su.se
+                    {/* <b>Kontakt</b> <br></br> */}
+                    <Contact>
+                    Axel Filipsson - axfi4485@student.su.se
                     <Break />
-                    Vanessa Jacobsson<br></br>
-                    vaja3619@student.su.se
-
+                    Vanessa Jacobsson - vaja3619@student.su.se
+                    </Contact>
 
                 </Info>
                 <Button onClick={() => handleClick(false)}>Jag samtycker</Button>
