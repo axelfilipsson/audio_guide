@@ -40,9 +40,9 @@ const FooterPoll = () => {
 
         <Footer>
 
-          <First> VI BEHÖVER FLER SVAR </First>
+          <First> VI BEHÖVER FEEDBACK </First>
           <Second>
-            SVARA PÅ FRÅGOR HÄR
+            SVARA HÄR
           </Second>
 
         </Footer>

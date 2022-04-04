@@ -3,10 +3,10 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   color: white;
-  background-color: rgba(0, 0, 0, 0.86);
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   width: 90%;
-  height: 80%;
+  height: 60%;
   position: absolute;
   top: 2%;
   left: 6%;
@@ -45,7 +45,7 @@ const ConsentPopup = (props) => {
                     Välkommen!
                     <br /><br />
 
-                    Ljudguiden är en del av ett examensarbete där du kommer få möjlighet att efter att ha använt prototypen svara på några frågor.
+                    Ljudguiden är en del av ett examensarbete där du kommer få möjlighet att efter att ha använt prototypen svara på några frågor, dina svar är viktiga för oss!
 
                     <br /><br />
                     Är du under 18 så får du dock inte svara på frågorna.
@@ -53,7 +53,7 @@ const ConsentPopup = (props) => {
 
                     Protypen använder även cookies men bara för att göra din upplevelse på sidan bättre.
                 </Info>
-                <Button onClick={() => handleClick(true)}>Jag är under 18 år och samtycker</Button>
+           
                 <Button onClick={() => handleClick(false)}>Jag samtycker</Button>
 
             </Container>

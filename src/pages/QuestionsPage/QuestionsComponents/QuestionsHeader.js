@@ -25,10 +25,8 @@ const H1 = styled.div`
 padding-top: 16px;
 font-size: 30px;
 grid-area: 1 / 16 / 2 / 60; 
+margin-top:7px;
 `
-
-
-
 
 const QuestionsHeader = (props) => {
   return (
