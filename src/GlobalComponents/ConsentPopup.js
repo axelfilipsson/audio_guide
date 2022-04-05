@@ -20,7 +20,8 @@ font-size: 16px;
 `
 
 const Button = styled.button`
-width: 80%;
+width: 30%;
+margin: 20px;
 background-color: #3959F8;
 border: none;
 color: white;
@@ -32,10 +33,16 @@ margin-top: 20px;
 `
 const ConsentPopup = (props) => {
 
-    function handleClick(underAged) {
+    function acceptCookies() {
 
         props.setPopup(false)
         localStorage.setItem("consent", false);
+    }
+
+    function declineCookies() {
+
+        props.setPopup(false)
+
     }
     return (
         <div>
@@ -43,17 +50,20 @@ const ConsentPopup = (props) => {
                 <Info>
                     Välkommen!
                     <br /><br />
-
-                    Ljudguiden är en del av ett examensarbete där du kommer få möjlighet att efter att ha använt prototypen svara på några frågor, dina svar är viktiga för oss!
-
-                    <br /><br />
-                    Är du under 18 så får du dock inte svara på frågorna.
+                    Här kan du lyssna och läsa om Dramaten och dess konst.
                     <br /><br />
 
-                    Protypen använder även cookies men bara för att göra din upplevelse på sidan bättre.
+                    Ljudguiden är en del av ett examensarbete där du kommer få möjlighet att efter att ha använt prototypen svara på några frågor.
+                    <br /><br />
+                    Dina svar är viktiga för oss!
+
+                    <br /><br />
+
+                    Är du okej med att vi använder cookies för att göra din upplevelse ättre?
                 </Info>
-           
-                <Button onClick={() => handleClick(false)}>Jag samtycker</Button>
+
+                <Button onClick={() => acceptCookies()}>Nej</Button>
+                <Button onClick={() => declineCookies()}>Ja </Button>
 
             </Container>
         </div>
