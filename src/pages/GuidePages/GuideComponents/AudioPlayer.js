@@ -43,7 +43,7 @@ const AudioPlayer = (props) => {
   background-size: cover;
   background-position: center;
   height: 26%;
-  box-shadow: 0px 6px 4px rgb(0,0,0,0.6) inset;
+  box-shadow: 0px 4px 4px rgb(0,0,0,0.5) inset;
 `
 
   let audio = new Audio(props.audio);
