@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import IconButton from '@mui/material/IconButton';
 import { Link } from "react-router-dom";
+import AXELOCHVANESSA from "../../../resources/images/AXELOCHVANESSA.png"
 
 
 const Header = styled.div`
@@ -10,6 +11,12 @@ padding: 24px;
 box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 text-align: left;
 width: 100%;
+background-image: url(${AXELOCHVANESSA});
+background-size: 110px;
+background-position: 84% 120%;
+background-repeat: no-repeat;
+
+
 `
 const Back = styled.div`
 
