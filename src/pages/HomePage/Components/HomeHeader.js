@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Link } from "react-router-dom";
 import Logo from '../../../resources/logo.svg'
 import HEADERIMAGE from '../../../resources/images/HEADER.png';
+import DRAMATEN from '../../../resources/DRAMATEN.png'
 
 
 const Header = styled.div`
@@ -38,10 +39,11 @@ font-size: 20px;
 color: black;
 margin-top: 7px;
 margin-left: 6px;
+margin-right: 6px;
 `
 
 const About = styled.div`
-margin-top: 10px;
+margin-top: 12px;
 margin-right: 14%;
 float: right;
 font-size: 14px;
@@ -53,7 +55,8 @@ const HomeHeader = () => {
   return (
     <Header class="z">
       <Img src={Logo} /> 
-        <H1> LJUDGUIDE</H1>
+      <Img src={DRAMATEN}/>
+        {/* <H1> LJUDGUIDE</H1> */}
         <Link to="/about" >
           <About>ABOUT</About>
         </Link>

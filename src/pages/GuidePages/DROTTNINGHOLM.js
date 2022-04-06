@@ -4,7 +4,7 @@ import InfoBox from "./GuideComponents/InfoBox"
 import FooterPoll from "./GuideComponents/FooterPoll";
 import styled from 'styled-components'
 import audio from "../../resources/audio/DROTTNINGHOLM.wav";
-import painting from '../../resources/images/TRAGEDIN.png';
+import painting from '../../resources/images/DROTTNINGHOLM.png';
 
 const Body = styled.div`
 height:100vh;
