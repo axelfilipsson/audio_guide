@@ -1,7 +1,10 @@
-import song from "../../../resources/knack.mp3";
+// import song from "../../../resources/knack.mp3";
 import styled from 'styled-components'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import PauseIcon from '@mui/icons-material/Pause';
+
+
+
 
 const PlayButton = styled.button`
   background: #3959F8;
@@ -10,7 +13,7 @@ const PlayButton = styled.button`
   margin-top: 40px;
   margin-bottom: 18px;
   width: 6em;
-  height: 12em;
+  height: 6em;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
   border-radius: 100px 0px 0px 100px ;
 
@@ -23,7 +26,7 @@ const PauseButton = styled.button`
   margin-top: 40px;
   margin-bottom: 18px;
   width: 6em;
-  height: 12em;
+  height: 6em;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
   border-radius: 0px 100px 100px 0px ;
 `
@@ -33,9 +36,17 @@ const Text = styled.text`
   font-weight: bold;
 `
 
-const AudioPlayer = () => {
+const AudioPlayer = (props) => {
 
-  let audio = new Audio(song);
+  const Background = styled.div`
+  background-image: url(${props.painting});
+  background-size: cover;
+  background-position: center;
+  height: 26%;
+  box-shadow: 0px 6px 4px rgb(0,0,0,0.6) inset;
+`
+
+  let audio = new Audio(props.audio);
 
   function play() {
 
@@ -52,7 +63,7 @@ const AudioPlayer = () => {
 
 
   return (
-    <div>
+    <Background>
       <PlayButton onClick={pause}>
         <PauseIcon fontSize="large" />
       </PlayButton>
@@ -60,7 +71,7 @@ const AudioPlayer = () => {
         <PlayArrowIcon fontSize="large" />
       </PauseButton>
 
-    </div>
+    </Background>
   )
 }
 export default AudioPlayer

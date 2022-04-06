@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Link } from "react-router-dom";
 import Logo from '../../../resources/logo.svg'
 
+
 const Header = styled.div`
 display: table;
 padding: 24px;
@@ -11,6 +12,8 @@ text-align: left;
 width: 100%;
 
 `
+
+
 
 const H1 = styled.div`
 margin-top: 7px;
@@ -41,7 +44,7 @@ color: black;
 
 const HomeHeader = () => {
   return (
-    <Header>
+    <Header class="z">
       <Img src={Logo} /> 
         <H1> LJUDGUIDE</H1>
         <Link to="/about" >
