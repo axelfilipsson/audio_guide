@@ -13,7 +13,7 @@ text-align: left;
 width: 100%;
 background-image: url(${AXELOCHVANESSA});
 background-size: 110px;
-background-position: 84% 120%;
+background-position: 80% 120%;
 background-repeat: no-repeat;
 
 

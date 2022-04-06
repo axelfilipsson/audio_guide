@@ -14,6 +14,7 @@ import TRAGEDIN from './pages/GuidePages/TRAGEDIN'
 import DRAMATSSKAPELSE from './pages/GuidePages/DRAMATSSKAPELSE'
 import GUSTAVIII from './pages/GuidePages/GUSTAVIII'
 import KOMEDIN from './pages/GuidePages/SKULPTUR'
+import OMBOKEN from './pages/GuidePages/OMBOKEN'
 
 
 
@@ -48,6 +49,7 @@ function App() {
           <Route path="/DROTTNINGHOLM" element={<DROTTNINGHOLM questionConsent={questionConsent} popup={popup} />} />
           <Route path="/GUSTAVIII" element={<GUSTAVIII questionConsent={questionConsent}  popup={popup} />} />
           <Route path="/KOMEDIN" element={<KOMEDIN questionConsent={questionConsent}  popup={popup} />} />
+          <Route path="/OMBOKEN" element={<OMBOKEN questionConsent={questionConsent}  popup={popup} />} />
         
         </Routes>
       </Router>

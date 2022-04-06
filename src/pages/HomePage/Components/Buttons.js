@@ -24,6 +24,7 @@ const Buttons = () => {
         <StyledLink to={"/OMKONSTEN"} > <GuideButton text={"OM KONSTEN"}></GuideButton></StyledLink> 
         <StyledLink to={"/GUSTAVIII"} > <GuideButton text={"GUSTAV III"}></GuideButton></StyledLink> 
         <StyledLink to={"/DROTTNINGHOLM"} > <GuideButton text={"DROTTNINGHOLM"}></GuideButton></StyledLink> 
+        <StyledLink to={"/OMBOKEN"} > <GuideButton text={"OMBOKEN"}></GuideButton></StyledLink> 
     </ButtonContainer>
   )
 }

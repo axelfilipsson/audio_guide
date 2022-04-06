@@ -6,7 +6,7 @@ const Container = styled.div`
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   width: 90%;
-  height: 70%;
+  height: 94%;
   position: absolute;
   top: 2%;
   left: 6%;
@@ -17,6 +17,7 @@ const Info = styled.div`
 
 margin: 16px;
 font-size: 16px;
+margin-top:60px;
 `
 
 const Button = styled.button`
@@ -59,7 +60,7 @@ const ConsentPopup = (props) => {
 
                     <br /><br />
 
-                    Är du okej med att vi använder cookies för att göra din upplevelse ättre?
+                    Är du okej med att vi använder cookies för att göra din upplevelse bättre?
                 </Info>
 
                 <Button onClick={() => acceptCookies()}>Nej</Button>

@@ -3,21 +3,21 @@ import AudioPlayer from "./GuideComponents/AudioPlayer"
 import InfoBox from "./GuideComponents/InfoBox"
 import FooterPoll from "./GuideComponents/FooterPoll";
 import styled from 'styled-components'
-import audio from "../../resources/audio/GUSTAVIII.wav";
+import audio from "../../resources/audio/OMBOKEN.wav";
 import painting from '../../resources/images/GUSTAVIII.png';
 
 const Body = styled.div`
 height:100vh;
 `
 
-const artwork = { title: "GUSTAV III"};
+const artwork = { title: "OM BOKEN"};
 
 const GuidePage = (props) => {
   return (
     <Body>
-      <GuideHeader title={artwork.title} artist={artwork.artist} />
+      <GuideHeader title={artwork.title} />
       <AudioPlayer audio={audio} painting={painting}/>
-      <InfoBox firstWord={"I Marmorfoajen "} rest={"finns Gustav Cederströms målning som föreställer Gustav III som har besökt sin teater i Gripsholm. Uppe på scenen tackar han den nigande operasångerskan Elisabeth Olin. Gustav III har grundat Dramaten och målningen har fått paradplatsen i Marmorfoajen."} />
+      <InfoBox firstWord={"För "} rest={"att få veta mer om Dramatenhuset och dess konst och inredning finns boken"}  italic={" 100 år på Nybroplan "} end={"utgiven strax innan Dramaten fyllde 100 år. Boken är skriven av berättaren ni lyssnat på, Dag Kronlund."} />
       {!props.popup &&
         !props.questionConsent ?
         <FooterPoll ></FooterPoll> : null}

@@ -22,6 +22,8 @@ const InfoBox = (props) => {
             <TextField>
                 <b>{props.firstWord}</b>
                 {props.rest}
+               <i>{props.italic}</i> 
+               {props.end}
             </TextField>
         </Container>
     )

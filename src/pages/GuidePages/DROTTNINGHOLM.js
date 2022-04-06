@@ -17,7 +17,7 @@ const GuidePage = (props) => {
     <Body>
       <GuideHeader title={artwork.title} />
       <AudioPlayer audio={audio} painting={painting} />
-      <InfoBox firstWord={"Målningen"} rest={" i Dramatens foajé har den symboliska titeln Dramats skapelse. Konstnären är Carl Larsson. Den visar en svävande ung dam, utsänd av Författaren i ena änden och en krigiskt utstyrd Skådespelare som är redo att med öppna armar ta emot i den andra änden."} />
+      <InfoBox firstWord={"I vestibulen"} rest={" finns en stor oljemålningen målad av Oskar Björk, professor på Konstakademien. Tanken med målningen var att fördjupa rummet för att inte direkt mötas av en vägg. Målningen föreställer ett parklandskap. Verket kom att bli kritiserat då det bara var ett parklandskap samt att de två stora pelarna täcker målningen."} />
       {!props.popup &&
         !props.questionConsent ?
         <FooterPoll ></FooterPoll> : null}
