@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Logo from '../../../resources/logo.svg'
 import HEADERIMAGE from '../../../resources/images/HEADER.png';
 import DRAMATEN from '../../../resources/DRAMATEN.png'
+import AboutButton from '../../../GlobalComponents/AboutButton'
 
 
 const Header = styled.div`
@@ -21,19 +22,17 @@ width: 100%;
 
 `
 
-
-
 const H1 = styled.div`
 margin-top: 7px;
 float: left;
-font-size: 20px;
+font-size: 18px;
 color: black;
-margin-left: 14px;
+margin-left: 12px;
 
 
 `
 const Img = styled.img`
-height: 30px;
+height: 24px;
 float: left;
 font-size: 20px;
 color: black;
@@ -43,8 +42,9 @@ margin-right: 6px;
 `
 
 const About = styled.div`
-margin-top: 12px;
+margin-top: 10px;
 margin-right: 14%;
+margin-left: 8px;
 float: right;
 font-size: 14px;
 color: black;
@@ -55,10 +55,11 @@ const HomeHeader = () => {
   return (
     <Header class="z">
       <Img src={Logo} /> 
-      <Img src={DRAMATEN}/>
-        {/* <H1> LJUDGUIDE</H1> */}
+      {/* <Img src={DRAMATEN}/> */}
+        <H1> LJUDGUIDEN</H1>
         <Link to="/about" >
-          <About>ABOUT</About>
+          <AboutButton/>
+          {/* <About>OM OSS</About> */}
         </Link>
     </Header>
   )

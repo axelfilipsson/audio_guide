@@ -4,9 +4,9 @@ import styled from 'styled-components'
 const Container = styled.div`
   color: white;
   background-color: rgba(0, 0, 0, 0.9);
-  border-radius: 10px;
+  border-radius: 8px;
   width: 90%;
-  height: 94%;
+  height: 80%;
   position: absolute;
   top: 2%;
   left: 6%;
@@ -29,7 +29,7 @@ color: white;
 font-weight: bold;
 font-size: 20px;
 padding: 10px;
-border-radius: 10px;
+// border-radius: 10px;
 margin-top: 20px;
 `
 const ConsentPopup = (props) => {
@@ -51,7 +51,7 @@ const ConsentPopup = (props) => {
                 <Info>
                     Välkommen!
                     <br /><br />
-                    Här kan du lyssna och läsa om Dramaten och dess konst.
+                    Här kan du lyssna och läsa om konstverken på Dramaten.
                     <br /><br />
 
                     Ljudguiden är en del av ett examensarbete där du kommer få möjlighet att efter att ha använt prototypen svara på några frågor.

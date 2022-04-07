@@ -27,7 +27,7 @@ color: white;
 font-weight: bold;
 font-size: 20px;
 padding: 10px;
-border-radius: 10px;
+// border-radius: 10px;
 margin-top: 8px;
 margin-bottom: 26px;
 `

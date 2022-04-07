@@ -8,14 +8,15 @@ import PauseIcon from '@mui/icons-material/Pause';
 
 const PlayButton = styled.button`
   background: #3959F8;
-  border: none;
-  color: #EFEFEF;
+  border:none;
+  // border-right: 1px solid white;
+  color: #FFFFFF;
   margin-top: 40px;
   margin-bottom: 18px;
   width: 6em;
   height: 6em;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-  border-radius: 100px 0px 0px 100px ;
+  border-radius: 0px 0px 0px 0px ;
 
 `
 
@@ -28,7 +29,7 @@ const PauseButton = styled.button`
   width: 6em;
   height: 6em;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-  border-radius: 0px 100px 100px 0px ;
+  border-radius: 0px 0px 0px 0px ;
 `
 
 const Text = styled.text`

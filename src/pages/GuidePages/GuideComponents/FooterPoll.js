@@ -3,14 +3,17 @@ import styled from 'styled-components'
 
 
 const Footer = styled.div`
+// margin-bottom: 5%;
+// margin-left: 5%;
+ width: 100%;
   height: 60px;
   position: relative;
    background-color: #3959F8;
   position: fixed; 
   bottom:0%;
 
-  width: 100%;
 
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 
 `
 
@@ -26,7 +29,8 @@ const Second = styled.div`
 `
 const StyledLink = styled(Link)`
      text-decoration: none;
-     color: black;
+     color:white;
+
 `;
 
 const FooterPoll = () => {

@@ -2,6 +2,11 @@ import styled from 'styled-components'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import IconButton from '@mui/material/IconButton';
 import { Link } from "react-router-dom";
+import AboutButton from "../../../GlobalComponents/AboutButton"
+
+const Icon = styled(ArrowBackIosIcon)`
+color: black;
+`
 
 
 const Header = styled.div`
@@ -18,8 +23,9 @@ const Back = styled.div`
 
 float: left;
 font-size: 20px;
-// color: white;
+ color: white;
 `
+
 
 const H1 = styled.div`
 margin-top: 8px;
@@ -46,13 +52,15 @@ const HomeHeader = (props) => {
       <Back>
       <a href="https://audio-guide.vercel.app/">
           <IconButton >
-            <ArrowBackIosIcon />
+            <Icon />
           </IconButton>
         </a>
       </Back>
       <H1>{props.title}</H1>
+      {/* <AboutButton/> */}
       <a href="https://audio-guide.vercel.app/about">
-        <About>ABOUT</About>
+      <AboutButton/>
+        {/* <About>OM LJUDGUIDEN</About> */}
       </a>
 
     </Header>

@@ -87,7 +87,7 @@ const QuestionBox = () => {
                     <label>Jobbigt att gå fram</label>
                     <br />
                     <input type="radio" name="entry.893376523" value="Känndes ovant"></input>
-                    <label>Känndes ovant</label>
+                    <label>Kändes ovant</label>
                     <br />
                     <input type="radio" name="entry.893376523" value="Inget särskilt"></input>
                     <label>Inget särskilt</label>
@@ -161,16 +161,22 @@ const QuestionBox = () => {
                     <label>Vet ej</label>
                 </div>
                 <div className='question-container'>
-                    <div className='question'>Tycker du Dramaten bör vidareutveckla Ljudguiden?</div>
+                    <div className='question'>Tycker du att Dramaten bör vidareutveckla Ljudguiden?</div>
                     <br />
-                    <input type="radio" name="entry.1876321008" value="Ja"></input>
-                    <label>Ja</label>
+                    <input type="checkbox" name="entry.1876321008" value="Ja, genom att utöka utbudet"></input>
+                    <label>Ja, genom att utöka utbudet</label>
                     <br />
-                    <input type="radio" name="entry.1876321008" value="Nej"></input>
-                    <label>Nej</label>
+                    <input type="checkbox" name="entry.1876321008" value="Ja, med mer interaktiv teknik"></input>
+                    <label>Ja, med mer interaktiv teknik</label>
                     <br />
-                    <input type="radio" name="entry.1876321008" value="Vet ej"></input>
+                    <input type="checkbox" name="entry.1876321008" value="Vet ej"></input>
                     <label>Vet ej</label>
+                    <br />
+                    <input type="checkbox" name="entry.1876321008" value="Nej, jag ser inget behov av detta"></input>
+                    <label>Nej, jag ser inget behov av detta</label>
+                    <br />
+                    <input type="checkbox" name="entry.1876321008" value="Nej, den är bra som den är"></input>
+                    <label>Nej, den är bra som den är</label>
                 </div>
                 <div className='question-container'>
                     <div className='question'>Tror du att digital teknik kan förbättra din helhetsupplevelse på Dramaten? </div>
