@@ -9,7 +9,7 @@ import AboutButton from '../../../GlobalComponents/AboutButton'
 
 const Header = styled.div`
 display: table;
-padding: 24px;
+padding: 20px;
 box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 text-align: left;
 width: 100%;

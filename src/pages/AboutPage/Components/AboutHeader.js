@@ -13,25 +13,27 @@ color: black;
 const Header = styled.div`
 display: table;
 padding: 20px;
+
 box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 text-align: left;
 width: 100%;
 background-image: url(${AXELOCHVANESSA});
 background-size: 110px;
-background-position: 80% 140%;
+background-position: 80% 160%;
 background-repeat: no-repeat;
 
 
 `
 const Back = styled.div`
-
+margin-top:7px;
+margin-bottom: 0px;
 float: left;
 font-size: 20px;
 color: black;
 ` 
 
 const H1 = styled.div`
-margin-top: 7px;
+margin-top: 6px;
 float: left;
 font-size: 20px;
 color: black;
@@ -47,9 +49,9 @@ const AboutHeader = () => {
     <Header>
       <Back>
         <Link to="/">
-          <IconButton >
+     
             <Icon />
-          </IconButton>
+          
         </Link>
       </Back>
       <H1>OM PROJEKTET</H1>
