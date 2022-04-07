@@ -50,7 +50,6 @@ const AudioPlayer = (props) => {
   let audio = new Audio(props.audio);
 
   function play() {
-
     if (audio.paused) {
       audio.play();
     }

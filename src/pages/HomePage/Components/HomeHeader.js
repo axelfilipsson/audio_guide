@@ -19,7 +19,6 @@ width: 100%;
 // background-position: 0% 20%;
 // background-repeat: no-repeat;
 
-
 `
 
 const H1 = styled.div`
@@ -32,12 +31,12 @@ margin-left: 12px;
 
 `
 const Img = styled.img`
-height: 24px;
+height: 28px;
 float: left;
 font-size: 20px;
 color: black;
-margin-top: 7px;
-margin-left: 6px;
+margin-top: 5px;
+margin-left: 0px;
 margin-right: 6px;
 `
 
