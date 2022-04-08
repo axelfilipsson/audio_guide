@@ -45,10 +45,10 @@ function App() {
           <Route path="/questions" element={<QuestionsPage popup={popup} questionConsent={questionConsent}giveQuestionConsent={giveQuestionConsent}/>} />
           <Route path="/DRAMATSSKAPELSE" element={<DRAMATSSKAPELSE questionConsent={questionConsent} popup={popup} />} />
           <Route path="/OMKONSTEN" element={<OMKONSTEN questionConsent={questionConsent}  popup={popup} />} />
-          <Route path="/TRAGEDIN" element={<TRAGEDIN questionConsent={questionConsent} popup={popup} />} />
+          <Route path="/TRAGEDIEN" element={<TRAGEDIN questionConsent={questionConsent} popup={popup} />} />
           <Route path="/DROTTNINGHOLM" element={<DROTTNINGHOLM questionConsent={questionConsent} popup={popup} />} />
           <Route path="/GUSTAVIII" element={<GUSTAVIII questionConsent={questionConsent}  popup={popup} />} />
-          <Route path="/KOMEDIN" element={<KOMEDIN questionConsent={questionConsent}  popup={popup} />} />
+          <Route path="/KOMEDIEN" element={<KOMEDIN questionConsent={questionConsent}  popup={popup} />} />
           <Route path="/OMBOKEN" element={<OMBOKEN questionConsent={questionConsent}  popup={popup} />} />
         
         </Routes>

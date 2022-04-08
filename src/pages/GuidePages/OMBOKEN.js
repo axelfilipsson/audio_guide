@@ -4,7 +4,7 @@ import InfoBox from "./GuideComponents/InfoBox"
 import FooterPoll from "./GuideComponents/FooterPoll";
 import styled from 'styled-components'
 import audio from "../../resources/audio/OMBOKEN.wav";
-import painting from '../../resources/images/GUSTAVIII.png';
+import painting from '../../resources/images/BOKEN.png';
 
 const Body = styled.div`
 height:100vh;

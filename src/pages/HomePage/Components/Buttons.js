@@ -17,8 +17,8 @@ const Buttons = () => {
 
   return (
     <ButtonContainer>
-      <StyledLink to={"/TRAGEDIN"} > <GuideButton text={"TRAGEDIN"}></GuideButton></StyledLink>
-      <StyledLink to={"/KOMEDIN"} > <GuideButton text={"KOMEDIN"}></GuideButton></StyledLink>
+      <StyledLink to={"/TRAGEDIEN"} > <GuideButton text={"TRAGEDIEN"}></GuideButton></StyledLink>
+      <StyledLink to={"/KOMEDIEN"} > <GuideButton text={"KOMEDIEN"}></GuideButton></StyledLink>
       <StyledLink to={"/DRAMATSSKAPELSE"} > <GuideButton text={"DRAMATS SKAPELSE"}></GuideButton></StyledLink>
       <StyledLink to={"/OMKONSTEN"} > <GuideButton text={"OM KONSTEN"}></GuideButton></StyledLink>
       <StyledLink to={"/GUSTAVIII"} > <GuideButton text={"GUSTAV III"}></GuideButton></StyledLink>

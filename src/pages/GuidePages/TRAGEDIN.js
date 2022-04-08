@@ -4,14 +4,14 @@ import InfoBox from "./GuideComponents/InfoBox"
 import FooterPoll from "./GuideComponents/FooterPoll";
 import styled from 'styled-components'
 import audio from "../../resources/audio/TRAGEDIN.wav";
-import painting from '../../resources/images/TRAGEDIN.png';
+import painting from '../../resources/images/TRAGEDIEN.png';
 
 
 const Body = styled.div`
 height:100vh;
 `
 
-const artwork = { title: "TRAGEDIN" };
+const artwork = { title: "TRAGEDIEN" };
 
 const GuidePage = (props) => {
   return (

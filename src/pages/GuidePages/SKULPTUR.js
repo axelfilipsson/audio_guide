@@ -4,13 +4,13 @@ import InfoBox from "./GuideComponents/InfoBox"
 import FooterPoll from "./GuideComponents/FooterPoll";
 import styled from 'styled-components'
 import audio from "../../resources/audio/KOMEDIN.wav";
-import painting from '../../resources/images/KOMEDIN.png';
+import painting from '../../resources/images/KOMEDIEN.png';
 
 const Body = styled.div`
 height:100vh;
 `
 
-const artwork = { title: "KOMEDIN" };
+const artwork = { title: "KOMEDIEN" };
 
 const GuidePage = (props) => {
   return (

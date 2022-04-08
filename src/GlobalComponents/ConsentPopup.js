@@ -1,5 +1,6 @@
 
 import styled from 'styled-components'
+import React from 'react';
 
 const Container = styled.div`
   color: white;
@@ -35,9 +36,10 @@ margin-top: 20px;
 const ConsentPopup = (props) => {
 
     function acceptCookies() {
-
+        // componentDidUpdate( localStorage.setItem("consent", false)) 
+        localStorage.setItem("consent", false)
         props.setPopup(false)
-        localStorage.setItem("consent", false);
+       
     }
 
     function declineCookies() {

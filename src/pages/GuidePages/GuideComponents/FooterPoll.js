@@ -3,17 +3,16 @@ import styled from 'styled-components'
 
 
 const Footer = styled.div`
-// margin-bottom: 5%;
-// margin-left: 5%;
- width: 100%;
+margin-bottom: 5%;
+margin-left: 5%;
+ width: 90%;
   height: 60px;
   position: relative;
-   background-color: #3959F8;
+   background-color: #F297DE;
+   color: black;
   position: fixed; 
   bottom:0%;
-
-
-  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.6);
 
 `
 
