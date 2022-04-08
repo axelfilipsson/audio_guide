@@ -17,7 +17,7 @@ const GuidePage = (props) => {
     <Body>
       <GuideHeader title={artwork.title} />
       <AudioPlayer audio={audio} painting={painting}/>
-      <InfoBox firstWord={"Lorem "} rest={"ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt ligula non nisl tempor pretium nec non tortor. Aliquam lobortis enim in orci euismod, non pellentesque nisl congue. Duis scelerisque iaculis mauris fermentum accumsan."} />
+      <InfoBox firstWord={"Komedien, "} rest={ "Tragediens motsats är gjord av Gusten Lindberg. Lindberg var väldigt uppskattad under denna tid och hade tidigare gjort en vacker staty vid namn Dimman år 1904 som finns på Nationalmuseum. Det kan ha varit orsaken till att han anförtroddes Thalia, komedins musa."} />
       {!props.popup &&
         !props.questionConsent ?
         <FooterPoll ></FooterPoll> : null}

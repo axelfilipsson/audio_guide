@@ -22,21 +22,20 @@ import OMBOKEN from './pages/GuidePages/OMBOKEN'
 const MainContext = createContext(null);
 
 function App() {
-  const [popup, setPopup] = useState(true);
+  const [popup, setPopup] = useState(false);
   const [questionConsent, giveQuestionConsent] = useState(false)
 
-  useEffect(() => {
-    console.log(localStorage.getItem('consent'))
-    if (localStorage.getItem('consent') != null) {
-      setPopup(JSON.parse(localStorage.getItem('consent')))
-      giveQuestionConsent(JSON.parse(localStorage.getItem('questionConsent')))
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (localStorage.getItem('consent') != null) {
+  //     setPopup(JSON.parse(localStorage.getItem('consent')))
+  //     giveQuestionConsent(JSON.parse(localStorage.getItem('questionConsent')))
+  //   }
+  // }, []);
 
   return (
 
     <div className="App">
-      {popup ? <ConsentPopup setPopup={setPopup} /> : null}
+      {/* {popup ? <ConsentPopup setPopup={setPopup} /> : null} */}
 
       <Router>
         <Routes>

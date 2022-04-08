@@ -2,6 +2,18 @@ import { Link } from "react-router-dom";
 import styled from 'styled-components'
 
 
+const Container = styled.div`
+
+//  width: 100%;
+//   height: 60px;
+//   position: relative;
+
+//   position: fixed; 
+//   bottom:0%;
+//   box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.6);
+
+`
+
 const Footer = styled.div`
 margin-bottom: 5%;
 margin-left: 5%;
@@ -36,7 +48,7 @@ const FooterPoll = () => {
 
 
   return (
-    <div>
+    <Container>
 
       <StyledLink to="/questions">
 
@@ -51,7 +63,7 @@ const FooterPoll = () => {
         </Footer>
       </StyledLink>
 
-    </div>
+    </Container>
   )
 }
 
