@@ -51,7 +51,7 @@ const QuestionConsent = (props) => {
             <Container>
 
                 <Info>
-                    Studien görs som ett kandidatarbete på institutionen för Data & systemvetenskap hos Stockholms Universitet tillsammans med Dramaten. I studien kollar vi på hur digital teknik kan förbättra din upplevelse här på Dramaten.
+                    Studien görs som ett kandidatarbete på institutionen för Data & systemvetenskap hos Stockholms Universitet tillsammans med Dramaten. I studien kollar vi på hur och om en digital ljudguide kan förbättra din upplevelse här på Dramaten.
                     <ul>
                         <li>All info används konfidentiellt och enbart i utbildningssyfte.</li>
                         <li>Du är anonym och har rätt till att avbryta när du vill. </li>

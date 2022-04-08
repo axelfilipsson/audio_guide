@@ -96,7 +96,7 @@ const QuestionBox = () => {
                     <label>Det väckte nyfikenhet</label>
                 </div>
                 <div className='question-container'>
-                    <div className='question'>Vad tyckte du om Ljudguiden?</div>
+                    <div className='question'>Vad tyckte du om hemsidan?</div>
                     <br />
                     <input type="radio" name="entry.692020234" value="Gillade inte"></input>
                     <label>Gillade inte</label>
@@ -110,6 +110,20 @@ const QuestionBox = () => {
                     <input type="radio" name="entry.692020234" value="Gillade mycket"></input>
                     <label>Gillade mycket</label>
                     <br />
+                </div>
+                <div className='question-container'>
+                    <div className='question'>Vad tyckte du om guidningen?</div>
+                    <br />
+                    <input type="radio" name="entry.1590345215" value="Gillade"></input>
+                    <label>Gillade</label>
+                    <br />
+                    <input type="radio" name="entry.1590345215" value="Vet ej"></input>
+                    <label>Vet ej</label>
+                    <br />
+                    <input type="radio" name="entry.1590345215" value="Gillade inte"></input>
+                    <label>Gillade inte</label>
+                    <br />
+                    
                 </div>
                 <div className='question-container'>
                     <div className='question'>Upplevde du att Ljudguiden var lätt att använda?</div>
@@ -161,19 +175,16 @@ const QuestionBox = () => {
                     <label>Vet ej</label>
                 </div>
                 <div className='question-container'>
-                    <div className='question'>Tycker du att Dramaten bör vidareutveckla Ljudguiden?</div>
+                    <div className='question'>Tycker du att Dramaten bör vidareutveckla Ljudguiden?(flerval)</div>
                     <br />
-                    <input type="checkbox" name="entry.1876321008" value="Ja, genom att utöka utbudet"></input>
-                    <label>Ja, genom att utöka utbudet</label>
-                    <br />
-                    <input type="checkbox" name="entry.1876321008" value="Ja, med mer interaktiv teknik"></input>
-                    <label>Ja, med mer interaktiv teknik</label>
+                    <input type="checkbox" name="entry.1876321008" value="Ja, guidning på fler konstverk"></input>
+                    <label>Ja, guidning på fler konstverk</label>
                     <br />
                     <input type="checkbox" name="entry.1876321008" value="Vet ej"></input>
                     <label>Vet ej</label>
                     <br />
-                    <input type="checkbox" name="entry.1876321008" value="Nej, jag ser inget behov av detta"></input>
-                    <label>Nej, jag ser inget behov av detta</label>
+                    <input type="checkbox" name="entry.1876321008" value="Nej, ljudguide behövs inte här"></input>
+                    <label>Nej, ljudguide behövs inte här</label>
                     <br />
                     <input type="checkbox" name="entry.1876321008" value="Nej, den är bra som den är"></input>
                     <label>Nej, den är bra som den är</label>

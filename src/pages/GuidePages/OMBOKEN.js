@@ -17,7 +17,7 @@ const GuidePage = (props) => {
     <Body>
       <GuideHeader title={artwork.title} />
       <AudioPlayer audio={audio} painting={painting}/>
-      <InfoBox firstWord={"För "} rest={"att få veta mer om Dramatenhuset och dess konst och inredning finns boken"}  italic={" 100 år på Nybroplan "} end={"utgiven strax innan Dramaten fyllde 100 år. Boken är skriven av berättaren ni lyssnat på, Dag Kronlund."} />
+      <InfoBox firstWord={"För "} rest={"att få veta mer om Dramatenhuset och dess konst och inredning finns boken"}  italic={" 100 år på Nybroplan "} end={"utgiven strax innan Dramaten fyllde 100 år. Boken är skriven av berättaren ni lyssnat på, Dag Kronlund."} bold={"Boken finns att köpa i biljettkassan!"} />
       {!props.popup &&
         !props.questionConsent ?
         <FooterPoll ></FooterPoll> : null}
