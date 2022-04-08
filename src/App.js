@@ -25,12 +25,9 @@ function App() {
   const [popup, setPopup] = useState(false);
   const [questionConsent, giveQuestionConsent] = useState(false)
 
-  // useEffect(() => {
-  //   if (localStorage.getItem('consent') != null) {
-  //     setPopup(JSON.parse(localStorage.getItem('consent')))
-  //     giveQuestionConsent(JSON.parse(localStorage.getItem('questionConsent')))
-  //   }
-  // }, []);
+  useEffect(() => {
+    giveQuestionConsent(JSON.parse(localStorage.getItem('questionConsent')))
+  }, []);
 
   return (
 
@@ -41,15 +38,15 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/questions" element={<QuestionsPage popup={popup} questionConsent={questionConsent}giveQuestionConsent={giveQuestionConsent}/>} />
+          <Route path="/questions" element={<QuestionsPage popup={popup} questionConsent={questionConsent} giveQuestionConsent={giveQuestionConsent} />} />
           <Route path="/DRAMATSSKAPELSE" element={<DRAMATSSKAPELSE questionConsent={questionConsent} popup={popup} />} />
-          <Route path="/OMKONSTEN" element={<OMKONSTEN questionConsent={questionConsent}  popup={popup} />} />
+          <Route path="/OMKONSTEN" element={<OMKONSTEN questionConsent={questionConsent} popup={popup} />} />
           <Route path="/TRAGEDIEN" element={<TRAGEDIN questionConsent={questionConsent} popup={popup} />} />
           <Route path="/DROTTNINGHOLM" element={<DROTTNINGHOLM questionConsent={questionConsent} popup={popup} />} />
-          <Route path="/GUSTAVIII" element={<GUSTAVIII questionConsent={questionConsent}  popup={popup} />} />
-          <Route path="/KOMEDIEN" element={<KOMEDIN questionConsent={questionConsent}  popup={popup} />} />
-          <Route path="/OMBOKEN" element={<OMBOKEN questionConsent={questionConsent}  popup={popup} />} />
-        
+          <Route path="/GUSTAVIII" element={<GUSTAVIII questionConsent={questionConsent} popup={popup} />} />
+          <Route path="/KOMEDIEN" element={<KOMEDIN questionConsent={questionConsent} popup={popup} />} />
+          <Route path="/OMBOKEN" element={<OMBOKEN questionConsent={questionConsent} popup={popup} />} />
+
         </Routes>
       </Router>
     </div>
