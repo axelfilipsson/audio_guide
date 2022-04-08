@@ -25,6 +25,7 @@ margin-left: 5%;
   position: fixed; 
   bottom:0%;
   box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.6);
+  font-family: 'replica';
 
 `
 

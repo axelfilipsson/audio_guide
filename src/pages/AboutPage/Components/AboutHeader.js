@@ -21,6 +21,7 @@ background-image: url(${AXELOCHVANESSA});
 background-size: 110px;
 background-position: 80% 160%;
 background-repeat: no-repeat;
+font-family: 'replica';
 
 
 `
@@ -33,9 +34,9 @@ color: black;
 ` 
 
 const H1 = styled.div`
-margin-top: 6px;
+margin-top: 8px;
 float: left;
-font-size: 20px;
+font-size: 18px;
 color: black;
 margin-left: 8px;
 `

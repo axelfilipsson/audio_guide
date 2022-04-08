@@ -25,11 +25,12 @@ background-color: #3959F8;
 border: none;
 color: white;
 font-weight: bold;
-font-size: 20px;
+font-size: 18px;
 padding: 10px;
 // border-radius: 10px;
 margin-top: 8px;
 margin-bottom: 26px;
+
 `
 const Break = styled.div`
 height: 6px;
@@ -67,7 +68,7 @@ const QuestionConsent = (props) => {
                     </Contact>
 
                 </Info>
-                <Button onClick={() => handleClick(false)}>Jag samtycker</Button>
+                <Button onClick={() => handleClick(false)}>JAG SAMTYCKER</Button>
 
             </Container>
         </div>

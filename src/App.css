@@ -1,6 +1,7 @@
 .App {
   background-color: #EDEDED;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   font-weight: bold;
  
   font-size: 30px;
@@ -17,4 +18,7 @@
 
 }
 
-
+@font-face {
+  font-family: 'replica';
+  src: url("../src/resources/ReplicaLL-Heavy.otf") format("opentype");
+}

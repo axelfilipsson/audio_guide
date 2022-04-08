@@ -11,8 +11,9 @@ const Button = styled.button`
 `
 
 const Text = styled.text`
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 22px;
+
+  font-family: 'replica';
 `
 
 const GuideButton = (props) => {

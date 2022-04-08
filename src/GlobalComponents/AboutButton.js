@@ -13,6 +13,7 @@ background-color: black;
 color: white;
 padding: 6px;
 font-size: 14px;
+font-family: 'replica';
 box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 
 `

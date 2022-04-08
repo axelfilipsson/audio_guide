@@ -12,6 +12,7 @@ const Header = styled.div`
   height: 90px;
   box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   text-align: left;
+  font-family: 'replica';
 `
 
 const Back = styled.div`
