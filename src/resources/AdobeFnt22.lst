@@ -1,0 +1,63 @@
+%!Adobe-FontList 1.22
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/miap/Library/Mobile Documents/com~apple~CloudDocs/Desktop/S K R I V B O R D E T !/Hemma_ARBETE/TRYCK/NYA_typsnitt_Replica/Helsida_öppning_0420/Document fonts/AdobeFnt22.lst
+FileLength:1685
+FileModTime:642078666
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:/Users/miap/Library/Mobile Documents/com~apple~CloudDocs/Desktop/S K R I V B O R D E T !/Hemma_ARBETE/TRYCK/NYA_typsnitt_Replica/Helsida_öppning_0420/Document fonts/MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:218640
+FileModTime:632087141
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ReplicaLL-Heavy
+FamilyName:Replica LL
+StyleName:Heavy
+MenuName:Replica LL Heavy
+StyleBits:0
+WeightClass:900
+WidthClass:5
+AngleClass:0
+FullName:Replica LL Heavy
+WritingScript:Roman
+OutlineFileName:/Users/miap/Library/Mobile Documents/com~apple~CloudDocs/Desktop/S K R I V B O R D E T !/Hemma_ARBETE/TRYCK/NYA_typsnitt_Replica/Helsida_öppning_0420/Document fonts/ReplicaLL-Heavy.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:161020
+FileModTime:639993272
+NameArray:0,Mac,4,Replica LL Heavy
+NameArray:0,Win,1,Replica LL Heavy
+NameArray:0,Win,16,Replica LL
+%EndFont
+

@@ -14,3 +14,13 @@
   font-family: 'replica';
   src: url("../src/resources/ReplicaLL-Heavy.otf") format("opentype");
 }
+
+@font-face {
+  font-family: 'minionPro';
+  src: url("../src/resources/MinionPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'adobe';
+  src: url("../src/resources/AdobeFnt22.lst") format("opentype");
+}

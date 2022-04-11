@@ -24,11 +24,11 @@ color: white;
 `
 
 const H1 = styled.div`
-margin-top: 7px;
+margin-top: 6px;
 float: left;
-font-size: 20px;
+font-size: 24px;
 color: black;
-margin-left: 12px;
+margin-left: 0px;
 `
 
 const QuestionsHeader = (props) => {
