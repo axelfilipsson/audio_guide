@@ -21,7 +21,7 @@ const QuestionBox = () => {
 
                 </div>
                 <div className='question-container'>
-                    <div className='question'>ÅLDER</div>
+                    <div className='question'>Ålder</div>
                     <br />
                     <input type="radio" name="entry.182468652" value="18-24"></input>
                     <label>18-24</label>

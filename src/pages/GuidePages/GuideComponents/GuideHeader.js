@@ -12,8 +12,6 @@ color: black;
 const Header = styled.div`
 display: table;
 padding: 20px;
-// padding-left: 10px;
-// box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 text-align: left;
 width: 100%;
 
