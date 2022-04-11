@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 const ButtonContainer = styled.div`
   padding-top: 44px;
+  padding-bottom: 40px;
 `
 const StyledLink = styled(Link)`
      text-decoration: none;

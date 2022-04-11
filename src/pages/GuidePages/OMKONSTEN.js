@@ -8,7 +8,7 @@ import painting from '../../resources/images/OMKONSTEN.png';
 
 
 const Body = styled.div`
-height:100vh;
+
 `
 
 const artwork = { title: "OM KONSTEN" };

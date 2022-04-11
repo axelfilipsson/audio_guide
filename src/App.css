@@ -1,21 +1,13 @@
 .App {
   background-color: #EDEDED;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
   font-weight: bold;
- 
   font-size: 30px;
   text-align: center;
-  margin:0px;
-  width:100vw;
-
-  overflow:hidden;
-
-
-
-  
-    position: relative;
-
+  margin: 0px;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
 }
 
 @font-face {

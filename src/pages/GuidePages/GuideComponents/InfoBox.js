@@ -6,15 +6,14 @@ const Container = styled.div`
 text-align: left;
 margin: 30px;
 margin-top: 0;
-
-overflow: auto;
-height: 50%;
+padding-bottom:30px;
 
 `
 
 const TextField = styled.p`
   font-size: 20px;
   font-weight: normal;
+
 `
 
 const InfoBox = (props) => {

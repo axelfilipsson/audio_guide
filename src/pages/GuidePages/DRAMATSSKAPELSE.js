@@ -7,7 +7,7 @@ import audio from "../../resources/audio/DRAMATSSKAPELSE.wav";
 import painting from '../../resources/images/DRAMATSSKAPELSE.png';
 
 const Body = styled.div`
-height:100vh;
+// height:100vh;
 `
 
 const artwork = { title: "DRAMATS SKAPELSE" };

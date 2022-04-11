@@ -7,7 +7,7 @@ import audio from "../../resources/audio/DROTTNINGHOLM.wav";
 import painting from '../../resources/images/DROTTNINGHOLM.png';
 
 const Body = styled.div`
-height:100vh;
+// height:100vh;
 `
 
 const artwork = { title: "DROTTNINGHOLM" };

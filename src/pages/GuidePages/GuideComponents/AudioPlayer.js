@@ -43,7 +43,7 @@ const AudioPlayer = (props) => {
   background-image: url(${props.painting});
   background-size: cover;
   background-position: center;
-  height: 26%;
+  height: 160px;
   box-shadow: 0px 4px 4px rgb(0,0,0,0.5) inset;
 `
 
