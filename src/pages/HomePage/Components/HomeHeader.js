@@ -49,7 +49,7 @@ color: black;
 
 const HomeHeader = () => {
   return (
-    <Header class="z">
+    <Header >
       <Img src={Logo} /> 
       {/* <Img src={DRAMATEN}/> */}
         <H1> LJUDGUIDEN</H1>

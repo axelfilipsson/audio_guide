@@ -18,8 +18,8 @@ const GuidePage = (props) => {
     <Body>
       <GuideHeader title={artwork.title} />
       <AudioPlayer audio={audio} painting={painting}/>
-      <InfoBox firstWord={"I Dramatens "} rest={"vestibul ser man de två statyerna Komedien och Tragedien. Tragedien är skulpturerad av Teodor Lundberg, lärare på Konstakademin. Tragedien är en bister ung man med energi i blicken."} />
-      {!props.popup &&
+      <InfoBox setPopup={props.setPopup}  popup={props.popup}  firstWord={"I Dramatens "} rest={"vestibul ser man de två statyerna Komedien och Tragedien. Tragedien är skulpturerad av Teodor Lundberg, lärare på Konstakademin. Tragedien är en bister ung man med energi i blicken."} />
+      {
         !props.questionConsent ?
         <FooterPoll ></FooterPoll> : null}
     </Body>

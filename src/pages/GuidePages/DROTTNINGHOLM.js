@@ -17,8 +17,8 @@ const GuidePage = (props) => {
     <Body>
       <GuideHeader title={artwork.title} />
       <AudioPlayer audio={audio} painting={painting} />
-      <InfoBox firstWord={"I vestibulen"} rest={" finns en stor oljemålning målad av Oskar Björck, professor på Konstakademien. Tanken med målningen var att fördjupa rummet för att inte direkt mötas av en vägg. Målningen föreställer ett parklandskap. Verket kom att bli kritiserat då det bara var ett parklandskap samt att de två stora pelarna täcker målningen."} />
-      {!props.popup &&
+      <InfoBox setPopup={props.setPopup}  popup={props.popup}  firstWord={"I vestibulen"} rest={" finns en stor oljemålning målad av Oskar Björck, professor på Konstakademien. Tanken med målningen var att fördjupa rummet för att inte direkt mötas av en vägg. Målningen föreställer ett parklandskap. Verket kom att bli kritiserat då det bara var ett parklandskap samt att de två stora pelarna täcker målningen."} />
+      {
         !props.questionConsent ?
         <FooterPoll ></FooterPoll> : null}
     </Body>

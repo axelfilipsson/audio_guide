@@ -10,7 +10,7 @@ const Button = styled.button`
   box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 `
 
-const Text = styled.text`
+const Text = styled.div`
   font-size: 22px;
 
   font-family: 'replica';

@@ -17,8 +17,8 @@ const GuidePage = (props) => {
     <Body>
       <GuideHeader title={artwork.title} artist={artwork.artist} />
       <AudioPlayer audio={audio} painting={painting}/>
-      <InfoBox firstWord={"I Marmorfoajen "} rest={"finns Gustav Cederströms målning som föreställer Gustav III som har besökt sin teater i Gripsholm. Uppe på scenen tackar han den nigande operasångerskan Elisabeth Olin. Gustav III har grundat Dramaten och målningen har fått paradplatsen i Marmorfoajen."} />
-      {!props.popup &&
+      <InfoBox  setPopup={props.setPopup}  popup={props.popup}  firstWord={"I Marmorfoajen "} rest={"finns Gustav Cederströms målning som föreställer Gustav III som har besökt sin teater i Gripsholm. Uppe på scenen tackar han den nigande operasångerskan Elisabeth Olin. Gustav III har grundat Dramaten och målningen har fått paradplatsen i Marmorfoajen."} />
+      {
         !props.questionConsent ?
         <FooterPoll ></FooterPoll> : null}
     </Body>
