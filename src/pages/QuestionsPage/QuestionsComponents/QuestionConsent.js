@@ -58,6 +58,7 @@ const QuestionConsent = (props) => {
                         <li>Du är anonym och har rätt till att avbryta när du vill. </li>
                         <li>Datan sparas inte efter avslutad studie.</li>
                         <li>Du måste vara 18 år eller äldre för att svara på enkäten.</li>
+                        <li>Data på internet kan aldrig garanterat vara helt anonym.</li>
                     </ul>
 
                     {/* <b>Kontakt</b> <br></br> */}

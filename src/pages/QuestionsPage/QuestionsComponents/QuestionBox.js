@@ -1,7 +1,11 @@
 
 import './QuestionBox.css';
-
+import React, { useState, useEffect } from 'react';
 const QuestionBox = () => {
+
+    const [compete, setCompete] = useState(false);
+
+  
 
 
     return (
@@ -123,7 +127,7 @@ const QuestionBox = () => {
                     <input type="radio" name="entry.1590345215" value="Gillade inte"></input>
                     <label>Gillade inte</label>
                     <br />
-                    
+
                 </div>
                 <div className='question-container'>
                     <div className='question'>Upplevde du att Ljudguiden var lätt att använda?</div>
@@ -201,10 +205,30 @@ const QuestionBox = () => {
                     <input type="radio" name="entry.1121994984" value="Vet ej"></input>
                     <label>Vet ej</label>
                 </div>
+
                 <div className='question-container'>
-                <div className='question'>Annat att tillägga / förbättringsförslag</div>
-                    <textarea rows="4" cols="50" name="entry.949042644" form="usrform"></textarea>
+                    <div className='question'>Annat att tillägga / förbättringsförslag</div>
+                    <textarea rows="4" cols="50" name="entry.949042644" ></textarea>
                 </div>
+                <div className='question-container'>
+              
+                    <input type="checkbox" onChange={() => setCompete(!compete)} />
+                    <label className='special-label' >Jag vill vara med och tävla om två teaterbiljetter</label>
+                  
+                   
+                    
+                </div>
+              
+
+                {compete ? <div className='question-container'>
+                    <div className='question'>Email</div>
+                    <h3>(OBS ditt svar blir inte längre helt anonymt om du anger din mail)</h3>
+                    <textarea rows="1"  name="entry.609824543" ></textarea>
+                </div> : null}
+
+
+
+
                 <button className='submit-button' type="submit">SKICKA</button>
             </form>
         </div >

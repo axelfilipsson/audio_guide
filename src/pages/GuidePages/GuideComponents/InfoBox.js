@@ -5,17 +5,12 @@ import styled from 'styled-components'
 
 
 const Container = styled.div`
-
-
  margin: 30px;
  padding-bottom:30px;
-
-
  text-align: left;
-margin: 30px;
-margin-top: 0;
-padding-bottom:30px;
-
+ margin: 30px;
+ margin-top: 0;
+ padding-bottom:30px;
 `
 
 const TextField = styled.p`
@@ -35,7 +30,7 @@ padding: 8px;
 
 const Message = styled.div`
 margin-top:20px;
-height: 104px;
+height: 180px;
 background-color:  #e6e6e6;
 box-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 
@@ -71,6 +66,8 @@ const InfoBox = (props) => {
                 <Message>
                     <Text>
                         Välkommen till ljudguiden här kan du lyssna och läsa om konsten på Dramaten!
+                        <br></br><br></br>
+                        Ge oss feedback för att vara med och tävla om två fribiljetter till en av Dramatens föreställningar på Stora scenen!
                     </Text>
 
 

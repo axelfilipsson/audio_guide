@@ -6,7 +6,15 @@ label {
   
 }
 
-input[type=radio] {
+.special-label {
+    margin-left: 10px;
+    margin-top: -2px;
+    position: absolute;
+    font-size: 16px;
+  
+}
+
+input[type=radio],[type=checkbox] {
     margin-top: 4px;
     border-color: #3959F8;
     padding: 14px 14px;
@@ -36,6 +44,11 @@ textarea {
 
 .question {
     font-size: 18px;
+}
+
+.compete {
+    font-size: 16px;
+
 }
 
 .container {
