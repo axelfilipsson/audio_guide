@@ -36,7 +36,7 @@ padding-top: 10px;
 `
 
 const Second = styled.div`
-  font-size: 20px;
+  font-size: 18px;
  
 `
 const StyledLink = styled(Link)`

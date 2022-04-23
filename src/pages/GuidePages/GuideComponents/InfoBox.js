@@ -30,7 +30,7 @@ padding: 8px;
 
 const Message = styled.div`
 margin-top:20px;
-height: 180px;
+height: 190px;
 background-color:  #e6e6e6;
 box-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 
