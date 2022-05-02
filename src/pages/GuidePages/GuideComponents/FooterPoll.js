@@ -58,7 +58,7 @@ const FooterPoll = () => {
 
           <First> VI BEHÖVER FEEDBACK </First>
           <Second>
-            SVARA OCH VINN 2 BILJETTER
+            SVARA HÄR
           </Second>
 
         </Footer>
